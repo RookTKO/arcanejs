@@ -8,6 +8,7 @@ module.exports = {
     author: '@chrisbiscardi',
   },
   plugins: [
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
