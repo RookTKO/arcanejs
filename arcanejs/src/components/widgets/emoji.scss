@@ -1,0 +1,453 @@
+:root {
+    --faceSize: 6rem;
+
+
+    --traingleSizeRight: 3.1rem;
+    --triangleSizeBottom: 7.12rem;
+    --traingleSizeLeft: 1.3rem;
+    --traingleSizeRightBorder: 3.6rem;
+    --triangleSizeBottomBorder: 7.8rem;
+    --traingleSizeLeftBorder: 2rem;
+  }
+  .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px; /* apply negative top and left margins to truly center the element */
+  }
+
+  .emoji-hat-border{
+      top: -6rem;
+      left: -0.9rem;
+      z-index:1;
+      position: absolute;
+      border-color: transparent transparent black transparent;
+      border-style: solid;
+      display: inline-block;
+      transform: rotate(-15deg);
+      border-width: 0px var(--traingleSizeRightBorder) var(--triangleSizeBottomBorder) var(--traingleSizeLeftBorder);
+
+    .emoji-hat{
+      top: 0.4rem;
+      left: -1.4rem;
+      z-index: 2;
+      position: absolute;
+      border-color: transparent transparent purple transparent;
+      border-style: solid;
+      transform: rotate(1deg);
+      border-width: 0px var(--traingleSizeRight) var(--triangleSizeBottom)     var(--traingleSizeLeft);
+
+      .emoji-hat-star-1{
+      top: 1.2rem;
+      left: -0.2rem;
+      z-index:1;
+      position: absolute;
+      border-color: transparent transparent yellow transparent;
+      border-style: solid;
+      display: inline-block;
+      transform: rotate(21deg);
+      border-width: 0px 0.6rem 0.6rem 0.6rem;
+      }
+      .emoji-hat-star-2{
+      top: 5.5rem;
+      left: 1.5rem;
+      z-index:1;
+      position: absolute;
+      border-color: transparent transparent yellow transparent;
+      border-style: solid;
+      display: inline-block;
+      transform: rotate(100deg);
+      border-width: 0px 0.6rem 0.6rem 1rem;
+      }
+      .emoji-hat-star-3{
+      top: 6rem;
+      left: -1.8rem;
+      z-index:1;
+      position: absolute;
+      border-color: transparent transparent yellow transparent;
+      border-style: solid;
+      display: inline-block;
+      transform: rotate(-45deg);
+      border-width: 0px 0.6rem 0.6rem 1rem;
+      }
+      .emoji-hat-star-4{
+        top: 3.2rem;
+        left: -0.7rem;
+      transform: rotate(-45deg);
+        background: yellow;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+      position: absolute;
+        height: 2.4rem;
+        width: 2.4rem;
+      }
+      .emoji-hat-star-5{
+      top: 2.89rem;
+      left: -2.55rem;
+      //z-index:1;
+      position: absolute;
+      border-color: transparent transparent yellow transparent;
+      border-style: solid;
+      display: inline-block;
+      transform: rotate(117deg);
+      border-width: 0px 0.6rem 0.6rem 0.6rem;
+      }
+    }
+    .emoji-hat::after {
+      content:"";
+      top: -0.3rem;
+      left: -3.0rem;
+      z-index: -1;
+      position: absolute;
+      border-color: transparent transparent purple transparent;
+      border-style: solid;
+      transform: rotate(-114deg);
+      border-width: 0rem 2.2rem 4.9rem 0.4rem;
+      }
+    .emoji-hat::before {
+      content:"";
+      top: -0.59rem;
+      left: -3.6rem;
+      z-index: -2;
+      position: absolute;
+      border-color: transparent transparent black transparent;
+      border-style: solid;
+      transform: rotate(-114.8deg);
+      border-width: 0rem 2.4rem 6.0rem 1.0rem;
+      }
+
+  }
+  .emoji-body {
+    border: 5px solid black;
+    height: var(--faceSize);
+    width: var(--faceSize);
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 4%;
+    left: 4.4%;
+  }
+
+
+  .emoji-face-sus {
+
+      &:after, &:before {
+          height: 0.6rem;
+          width: 0.6rem;
+          position: absolute;
+          content: "";
+          width: 0.6rem;
+          background-color: black;
+          border-radius: 50%;
+          top: 2.5rem;
+          animation: emoji-face-1-move 5s ease-in-out infinite, emoji-eyes-1-blink 2s ease-in-out infinite;
+          animation-direction: alternate;
+      }
+
+      &:after {
+          left: 2rem;
+
+      }
+
+      &:before {
+
+          left: 5.3rem;
+      }
+
+      .mouth {
+          position: absolute;
+          height: 0.3rem;
+          width: 1.8rem;
+          background-color: black;
+          border-radius: 0rem;
+          top: 3rem;
+          left:3.1rem;
+          animation: emoji-face-1-move 5s ease-in-out infinite;
+          animation-direction: alternate;
+      }
+
+    @keyframes emoji-eyes-1-blink {
+        0% {
+            border-radius: 50%;
+            height: 0.6rem;
+            width: 0.6rem;
+        }
+      30%{
+           // height: 1.1rem;
+           // width: 1.1rem;
+      }
+       35%{
+            //    height: 1.1rem;
+           // width: 1.1rem;
+      }
+       65%{
+            //      height: 1.1rem;
+           // width: 1.1rem;
+      }
+       75%{
+            //height: 1.1rem;
+            //width: 1.1rem;
+      }
+        97% {
+            height: 0.6rem;
+            width: 0.6rem;
+            border-radius: 50%;
+        }
+        100% {
+          height: 0rem;
+            border-radius: 50%;
+        }
+    }
+
+    @keyframes emoji-face-1-move {
+        0% {
+            transform: translateX(0);
+        }
+        30% {
+            transform: translateX(0);
+        }
+        35% {
+            //border-radius: 0.2rem;
+            //height: 2.3rem;
+            transform: translateX(-1rem);
+        }
+        65% {
+            //border-radius: 0.2rem;
+            //height: 2.3rem;
+            transform: translateX(-1rem);
+        }
+        70% {
+            transform: translateX(-1.9rem);
+        }
+        85% {
+            transform: translateX(-1.9rem);
+        }
+        90% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+  }
+  .emoji-face-anime {
+
+      $eyeballs: 1.9rem;
+      &:after, &:before {
+          height: $eyeballs;
+          width: $eyeballs;
+          position: absolute;
+          content: "";
+          background-color: black;
+          border-radius: 50%;
+          top: 2.5rem;
+          //animation: emoji-face-1-move 5s ease-in-out infinite, emoji-eyes-1-blink 2s ease-in-out infinite;
+          animation-direction: alternate;
+      }
+
+      &:after {
+          left: 0.3rem;
+
+      }
+
+      &:before {
+
+          left: 3.8rem;
+      }
+
+      .mouth {
+          position: absolute;
+          height: 0.3rem;
+          width: 1.2rem;
+          background-color: black;
+          border-radius: 0rem;
+          top: 4rem;
+          left:2.46rem;
+          //animation: emoji-face-1-move 5s ease-in-out infinite;
+          animation-direction: alternate;
+      }
+
+    @keyframes emoji-eyes-1-blink {
+        0% {
+            border-radius: 50%;
+            height: 0.6rem;
+            width: 0.6rem;
+        }
+      30%{
+           // height: 1.1rem;
+           // width: 1.1rem;
+      }
+       35%{
+            //    height: 1.1rem;
+           // width: 1.1rem;
+      }
+       65%{
+            //      height: 1.1rem;
+           // width: 1.1rem;
+      }
+       75%{
+            //height: 1.1rem;
+            //width: 1.1rem;
+      }
+        97% {
+            height: 0.6rem;
+            width: 0.6rem;
+            border-radius: 50%;
+        }
+        100% {
+          height: 0rem;
+            border-radius: 50%;
+        }
+    }
+
+    @keyframes emoji-face-1-move {
+        0% {
+            transform: translateX(0);
+        }
+        30% {
+            transform: translateX(0);
+        }
+        35% {
+            //border-radius: 0.2rem;
+            //height: 2.3rem;
+            transform: translateX(-1rem);
+        }
+        65% {
+            //border-radius: 0.2rem;
+            //height: 2.3rem;
+            transform: translateX(-1rem);
+        }
+        70% {
+            transform: translateX(-1.9rem);
+        }
+        85% {
+            transform: translateX(-1.9rem);
+        }
+        90% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+  }
+
+  .emoji-sparklingeyes-upper{
+
+      &:after, &:before {
+          height: 0.91rem;
+          width: 1.1rem;
+          position: absolute;
+          content: "";
+          background-color: white;
+          border-radius: 50%;
+          z-index:2;
+          top: 2.55rem;
+          transform: rotate(-35deg);
+          animation: emoji-sparklingeyes-upper-move 5s ease-in-out infinite;
+          animation-direction: alternate;
+      }
+
+      &:after {
+          left: 0.48rem;
+
+      }
+
+      &:before {
+
+          left: 4.0rem;
+      }
+
+
+    @keyframes emoji-sparklingeyes-upper-move {
+        0% {
+          transform: rotate(-35deg);
+          transform:translateX(10%);
+        }
+      10%{
+          transform: rotate(-25deg);
+           transform:translateX(-10%);
+      }
+      20%{
+          transform: rotate(5deg);
+          transform:translateX(20%);
+      }
+      80%{
+          transform: rotate(-5deg);
+      }
+      96%{
+          transform: rotate(-15deg);
+      }
+      100% {
+          transform: rotate(-35deg);
+        }
+    }
+
+  }
+  .emoji-sparklingeyes-lower{
+
+      &:after, &:before {
+          height: 0.4rem;
+          width: 0.6rem;
+          position: absolute;
+          content: "";
+          background-color: white;
+          border-radius: 50%;
+          z-index:2;
+          top: 3.75rem;
+          transform: rotate(-35deg);
+          animation: emoji-sparklingeyes-lower-move 5s ease-in-out infinite;
+          animation-direction: alternate;
+      }
+
+      &:after {
+          left: 1.3rem;
+
+      }
+
+      &:before {
+
+          left: 4.82rem;
+      }
+
+
+    @keyframes emoji-sparklingeyes-lower-move {
+        0% {
+          transform: rotate(5deg);
+        }
+      10%{
+          transform: rotate(-5deg);
+          transform:translateX(10%);
+      }
+       25%{
+          transform: rotate(-1deg);
+          transform:translateX(-10%);
+      }
+      100%{
+           transform: rotate(-35deg);
+      }
+    }
+  }
+
+
+  .emoji-anime-sparkle{
+      &:after, &:before {
+          height: 1rem;
+          width: 3rem;
+          border: 5px red;
+      }
+  }
+
+  .crystalball{
+    background-color: blue;
+    border: 5px red;
+  }
+
+  .emoji-hands{
+    background-color: blue;
+    border: 5px red;
+  }
+
+
+
