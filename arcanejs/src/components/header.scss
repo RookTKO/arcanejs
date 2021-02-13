@@ -1,0 +1,80 @@
+$primaryColor: #FFC600;
+$secondaryColor: #ffd133;
+$triColor: #8736AA;
+
+$primaryMessangerBlue: #00B8FF;
+$secondaryMessangerBlue: #0039FF;
+$triMessangerBlue: #4600FF;
+
+.horizontal-navBar {
+  background: $primaryColor;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 4rem;
+  text-shadow: 5px 5px 0 rgb(0 0 0 / 5%);
+  text-decoration: none;
+
+}
+
+
+/* Fixed sidenav, full height */
+.sideBarNav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    // top: 0;
+    // left: 0;
+    background-color: $primaryColor;
+    overflow-x: hidden;
+    padding-top: 20px;
+
+    a{
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 12px;
+      color: black;
+      //display: block;
+      border: none;
+      background: none;
+      width: 100%;
+      //text-align: left;
+      cursor: pointer;
+      outline: none;
+      &:hover{
+        cursor: pointer;
+        color: black;
+        border-left: 4px solid $triColor;
+      }
+    }
+    .sideBarLabelNested{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(135deg, #9470CE 10%, $triColor 50%, $secondaryColor 50%);
+      background-repeat: repeat-y;
+      background-size: 300% 300%;
+      background-position: right  bottom;
+      transition: all .3s ease-out;
+      padding: 20px;
+      &:hover{
+        color: white;
+        cursor: pointer;
+        background-position: left bottom;
+        border-left: 0px;
+
+      }
+    }
+}
+
+.sideBarLink {
+  margin-left: 16px;
+}
+
+.sideBarLabel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+

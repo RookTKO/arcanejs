@@ -2,7 +2,7 @@ import React from 'react';
 import './emoji.scss';
 
 const Emoji = () => (
-<div style={{postion: "absolute"}}>
+
   <div className="center">
     <span classNameName="crystalball"></span>
     <span className="emoji-hat-border">
@@ -24,7 +24,7 @@ const Emoji = () => (
     <span className="emoji-hands"></span>
     <span className="crystalball"></span>
   </div>
-</div>
+
 )
 
 

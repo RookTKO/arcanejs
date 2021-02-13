@@ -1,6 +1,7 @@
+$mainEmojiColor: #ffe100;
+$secondEmojiColor: #c300ffd0;
 :root {
     --faceSize: 6rem;
-
 
     --traingleSizeRight: 3.1rem;
     --triangleSizeBottom: 7.12rem;
@@ -11,9 +12,11 @@
   }
   .center{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -25px 0 0 -25px; /* apply negative top and left margins to truly center the element */
+    top: 2.2rem;
+    left: 1.4rem;
+    transform:scale(0.3);
+    //margin: -25px 0 0 -25px;
+    z-index:10;
   }
 
   .emoji-hat-border{
@@ -32,7 +35,7 @@
       left: -1.4rem;
       z-index: 2;
       position: absolute;
-      border-color: transparent transparent purple transparent;
+      border-color: transparent transparent $secondEmojiColor transparent;
       border-style: solid;
       transform: rotate(1deg);
       border-width: 0px var(--traingleSizeRight) var(--triangleSizeBottom)     var(--traingleSizeLeft);
@@ -53,7 +56,7 @@
       left: 1.5rem;
       z-index:1;
       position: absolute;
-      border-color: transparent transparent yellow transparent;
+      border-color: transparent transparent yellow  transparent;
       border-style: solid;
       display: inline-block;
       transform: rotate(100deg);
@@ -64,7 +67,7 @@
       left: -1.8rem;
       z-index:1;
       position: absolute;
-      border-color: transparent transparent yellow transparent;
+      border-color: transparent transparent yellow  transparent;
       border-style: solid;
       display: inline-block;
       transform: rotate(-45deg);
@@ -74,7 +77,7 @@
         top: 3.2rem;
         left: -0.7rem;
       transform: rotate(-45deg);
-        background: yellow;
+        background: yellow ;
         clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
       position: absolute;
         height: 2.4rem;
@@ -85,7 +88,7 @@
       left: -2.55rem;
       //z-index:1;
       position: absolute;
-      border-color: transparent transparent yellow transparent;
+      border-color: transparent transparent yellow  transparent;
       border-style: solid;
       display: inline-block;
       transform: rotate(117deg);
@@ -98,7 +101,7 @@
       left: -3.0rem;
       z-index: -1;
       position: absolute;
-      border-color: transparent transparent purple transparent;
+      border-color: transparent transparent $secondEmojiColor transparent;
       border-style: solid;
       transform: rotate(-114deg);
       border-width: 0rem 2.2rem 4.9rem 0.4rem;
@@ -120,7 +123,7 @@
     border: 5px solid black;
     height: var(--faceSize);
     width: var(--faceSize);
-    background-color: yellow;
+    background-color: $mainEmojiColor;
     border-radius: 50%;
     position: absolute;
     top: 4%;
