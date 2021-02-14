@@ -22,6 +22,7 @@ const Layout = ({ children }) => (
         <Header/>
         <div class="blogPost">
             {children}
+            <p>sdsdsdsd<a>TEST</a>sdsdsdsd</p>
           </div>
       </>
     )}

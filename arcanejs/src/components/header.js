@@ -11,34 +11,24 @@ function NavBar(){
   return(
     <div className="horizontal-navBar">
       <Emoji />
-    <Link
-      to="/"
-      style={{
-        color: 'black',
-        textDecoration: 'none'
-      }}
-    >
-      ArcaneJS
+    <Link to="/" className="logo-prefix" >
+      arcane
     </Link>
-    <Link to="/"       style={{
-        color: 'black',
-        textDecoration: 'none'
-      }}>
-      Test
-    </Link>
-    ??
   </div>
   )
 }
 
 function SideBarMenu(){
   return(
+    <>
+    <NavBar  />
     <div className="sideBarNav">
       {SideBarData.map((item, index)=>
       {
         return <SideBarItem item={item} key={index} />
       })}
     </div>
+    </>
   )
 }
 
@@ -174,7 +164,6 @@ const SideBarData = [
 
 const Header = () => (
   <>
-  <NavBar  />
   <SideBarMenu />
 
   </>

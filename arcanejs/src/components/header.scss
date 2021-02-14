@@ -7,16 +7,60 @@ $secondaryMessangerBlue: #0039FF;
 $triMessangerBlue: #4600FF;
 
 .horizontal-navBar {
-  width:100%;
+
+  width: 13.2rem;
   position: fixed;
-  top: -1rem;
+  top: -0.8rem;
   background: $primaryColor;
   padding-top: 2rem;
   padding-bottom: 1rem;
-  padding-left: 4rem;
-  text-shadow: 5px 5px 0 rgb(0 0 0 / 5%);
+  padding-left: 6.4rem;
+  //text-shadow: 5px 5px 0 rgb(0 0 0 / 5%);
   text-decoration: none;
-  z-index:9;
+  z-index:5;
+  display: flex;
+  //justify-content: space-between;
+
+  .logo-prefix{
+
+    font-size: 2rem;
+    font-family: GothicCastle;
+    transform: rotate(-8deg);
+    text-decoration: none;
+    color: #8736AA;
+    text-shadow: 2px 2px black,
+    2px 2px black,
+    2px 2px black,
+    2px 2px black;
+    transition: all .3s ease-in-out;
+  }
+  .logo-prefix:hover{
+    transform:scale(1.2);
+  }
+  .logo-prefix::before {
+    position: absolute;
+    top: -0.5rem;
+    padding-top: 0.5rem;
+    padding-left: 0.4rem;
+    z-index: -1;
+    height: 300%;
+    font-size: 3rem;
+    font-family: GothicSchool;
+    color: #00B8FF;
+    opacity: 0.6;
+    background-image: linear-gradient(-180deg,
+    #00B8FF,
+    rgba(31,104,254,255),
+    rgba(65,79,254,255) ,
+    rgba(76,73,252,255) ,
+    rgba(86,63,255,255),
+    rgba(108,55,255,255),
+    #8736AA);
+    text-shadow: none;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    content: "JS";
+  }
 
 }
 
@@ -24,13 +68,13 @@ $triMessangerBlue: #4600FF;
 /* Fixed sidenav, full height */
 .sideBarNav {
     height: 100%;
-    width: 200px;
+    width: 13.2rem;
     position: fixed;
     z-index: 1;
     top: 2rem;
     background-color: $primaryColor;
     overflow-x: hidden;
-    padding-top: 20px;
+    padding-top: 2.5rem;
 
     a{
       padding: 6px 8px 6px 16px;
@@ -51,6 +95,7 @@ $triMessangerBlue: #4600FF;
         border-left: 4px solid $triColor;
       }
     }
+
     .sideBarLabelNested{
       display: flex;
       justify-content: space-between;
