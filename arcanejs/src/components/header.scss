@@ -7,12 +7,16 @@ $secondaryMessangerBlue: #0039FF;
 $triMessangerBlue: #4600FF;
 
 .horizontal-navBar {
+  width:100%;
+  position: fixed;
+  top: -1rem;
   background: $primaryColor;
   padding-top: 2rem;
   padding-bottom: 1rem;
   padding-left: 4rem;
   text-shadow: 5px 5px 0 rgb(0 0 0 / 5%);
   text-decoration: none;
+  z-index:9;
 
 }
 
@@ -23,8 +27,7 @@ $triMessangerBlue: #4600FF;
     width: 200px;
     position: fixed;
     z-index: 1;
-    // top: 0;
-    // left: 0;
+    top: 2rem;
     background-color: $primaryColor;
     overflow-x: hidden;
     padding-top: 20px;
@@ -41,6 +44,7 @@ $triMessangerBlue: #4600FF;
       //text-align: left;
       cursor: pointer;
       outline: none;
+      transition: all .1s ease-out;
       &:hover{
         cursor: pointer;
         color: black;
@@ -56,13 +60,16 @@ $triMessangerBlue: #4600FF;
       background-size: 300% 300%;
       background-position: right  bottom;
       transition: all .3s ease-out;
-      padding: 20px;
+      padding-left: 2rem;
+      padding-top:0.5rem;
+      padding-bottom:0.5rem;
+
       &:hover{
         color: white;
         cursor: pointer;
         background-position: left bottom;
         border-left: 0px;
-
+        position: relative;
       }
     }
 }

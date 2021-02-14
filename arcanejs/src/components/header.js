@@ -6,11 +6,28 @@ import './header.scss'
 import {RiArrowDownSFill} from "@react-icons/all-files/ri/RiArrowDownSFill"
 import {RiArrowUpSFill} from "@react-icons/all-files/ri/RiArrowUpSFill"
 
-function HorizontalHeader(){
+
+function NavBar(){
   return(
-    <div>
-      testish?
-    </div>
+    <div className="horizontal-navBar">
+      <Emoji />
+    <Link
+      to="/"
+      style={{
+        color: 'black',
+        textDecoration: 'none'
+      }}
+    >
+      ArcaneJS
+    </Link>
+    <Link to="/"       style={{
+        color: 'black',
+        textDecoration: 'none'
+      }}>
+      Test
+    </Link>
+    ??
+  </div>
   )
 }
 
@@ -31,7 +48,7 @@ function SideBarItem({ item }) {
   const showSubnav = () => setSubnav(!subnav)
   return (
     <>
-      <Link className="sideBarLabel" to="/" onClick={item.subNav && showSubnav}>
+      <a className="sideBarLabel" onClick={item.subNav && showSubnav}>
         <div>
           {item.icon}
           <span className="sideBarLink">{item.title}</span>
@@ -41,7 +58,7 @@ function SideBarItem({ item }) {
             : item.subNav
             ? item.iconClose
             : null}
-      </Link>
+      </a>
       {subnav && item.subNav.map((item, index) =>{
         return(
           <NestedSideBarItem item={item} key={index} />
@@ -57,7 +74,7 @@ function NestedSideBarItem({ item }) {
   const showSubnav = () => setSubnav(!subnav)
   return (
     <>
-      <Link className="sideBarLabelNested" to="/" onClick={item.subNav && showSubnav}>
+      <Link className="sideBarLabelNested" to="/page-2" onClick={item.subNav && showSubnav}>
         <div>
           {item.icon}
           <span className="sideBarLink">{item.title}</span>
@@ -137,31 +154,27 @@ const SideBarData = [
     icon: '🥚',
     iconClose: <RiArrowDownSFill />,
     iconOpen: <RiArrowUpSFill />
+  },
+  {
+    title:'Objects',
+    path: '/',
+    icon: '🥚',
+    iconClose: <RiArrowDownSFill />,
+    iconOpen: <RiArrowUpSFill />
+  },
+  {
+    title:'Classes',
+    path: '/',
+    icon: '🥚',
+    iconClose: <RiArrowDownSFill />,
+    iconOpen: <RiArrowUpSFill />
   }
 
 ]
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <>
-  <Emoji />
-  <div className="horizontal-navBar">
-    <Link
-      to="/"
-      style={{
-        color: 'black',
-        textDecoration: 'none'
-      }}
-    >
-      <span>{siteTitle}</span>
-    </Link>
-    <Link to="/"       style={{
-        color: 'black',
-        textDecoration: 'none'
-      }}>
-      Test
-    </Link>
-    ??
-  </div>
+  <NavBar  />
   <SideBarMenu />
 
   </>
