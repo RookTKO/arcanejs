@@ -23,7 +23,7 @@ $triMessangerBlue: #4600FF;
 
   .logo-prefix{
 
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-family: GothicCastle;
     transform: rotate(-8deg);
     text-decoration: none;
@@ -41,10 +41,10 @@ $triMessangerBlue: #4600FF;
     position: absolute;
     top: -0.5rem;
     padding-top: 0.5rem;
-    padding-left: 0.4rem;
+    padding-left: 0.6rem;
     z-index: -1;
     height: 300%;
-    font-size: 3rem;
+    font-size: 3.2rem;
     font-family: GothicSchool;
     color: #00B8FF;
     opacity: 0.6;
@@ -110,7 +110,10 @@ $triMessangerBlue: #4600FF;
       padding-bottom:0.5rem;
 
       &:hover{
+
         color: white;
+        text-shadow:
+            1px 1px 0 #000;
         cursor: pointer;
         background-position: left bottom;
         border-left: 0px;
