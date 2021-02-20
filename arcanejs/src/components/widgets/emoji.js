@@ -1,9 +1,9 @@
 import React from 'react';
 import './emoji.scss';
 
-const Emoji = () => (
+const Emoji = ({bigLogo}) => (
 
-  <div className="center">
+  <div className={bigLogo == true ? "center" : "topLeftNav"}>
     <span classNameName="crystalball"></span>
     <span className="emoji-hat-border">
       <span className="emoji-hat">
@@ -14,12 +14,18 @@ const Emoji = () => (
         <span className="emoji-hat-star-5"></span>
       </span>
     </span>
+    {bigLogo ?
+    <span className="emoji-body emoji-face-sus ">
+      <span className="mouth"></span>
+    </span>
+    :
     <span className="emoji-body emoji-face-anime">
 
       <span className="emoji-sparklingeyes-upper"></span>
       <span className="emoji-sparklingeyes-lower"></span>
       <span className="mouth"></span>
     </span>
+    }
 
     <span className="emoji-hands"></span>
     <span className="crystalball"></span>

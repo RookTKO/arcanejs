@@ -6,8 +6,16 @@ $primaryMessangerBlue: #00B8FF;
 $secondaryMessangerBlue: #0039FF;
 $triMessangerBlue: #4600FF;
 
+@media only screen and (max-width: 768px) {
+
+  .horizontal-navBar, .sideBarNav {
+    visibility:hidden;
+  }
+}
+
 .horizontal-navBar {
 
+  //border-right:2px solid black;
   width: 13.2rem;
   position: fixed;
   top: -0.8rem;
@@ -35,7 +43,7 @@ $triMessangerBlue: #4600FF;
     transition: all .3s ease-in-out;
   }
   .logo-prefix:hover{
-    transform:scale(1.2);
+    transform:scale(1.5);
   }
   .logo-prefix::before {
     position: absolute;
@@ -67,6 +75,8 @@ $triMessangerBlue: #4600FF;
 
 /* Fixed sidenav, full height */
 .sideBarNav {
+  transform: skew(-2deg);
+  //border-right:2px solid black;
     height: 100%;
     width: 13.2rem;
     position: fixed;

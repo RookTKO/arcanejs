@@ -10,12 +10,20 @@ $secondEmojiColor: #c300ffd0;
     --triangleSizeBottomBorder: 7.8rem;
     --traingleSizeLeftBorder: 2rem;
   }
-  .center{
+  .topLeftNav{
     position: absolute;
     top: 3.1rem;
     left: 2.4rem;
     transform: rotate(-11deg)
                 scale(0.4);
+    z-index:10;
+  }
+  .center{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: rotate(-11deg)
+                scale(3.4);
     z-index:10;
   }
 
@@ -31,8 +39,8 @@ $secondEmojiColor: #c300ffd0;
       border-width: 0px var(--traingleSizeRightBorder) var(--triangleSizeBottomBorder) var(--traingleSizeLeftBorder);
 
     .emoji-hat{
-      top: 0.4rem;
-      left: -1.4rem;
+      top: 0.3rem;
+      left: -1.5rem;
       z-index: 2;
       position: absolute;
       border-color: transparent transparent $secondEmojiColor transparent;

@@ -10,7 +10,7 @@ import {RiArrowUpSFill} from "@react-icons/all-files/ri/RiArrowUpSFill"
 function NavBar(){
   return(
     <div className="horizontal-navBar">
-      <Emoji />
+      <Emoji bigLogo={false}/>
     <Link to="/" className="logo-prefix" >
       arcane
     </Link>

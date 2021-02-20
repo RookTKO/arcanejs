@@ -1,29 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { StaticQuery, graphql } from 'gatsby'
+import './landingPageLayout.scss'
+import Emoji from './widgets/emoji'
 import { Link } from 'gatsby'
-import Header from './header'
-import Footer from './footer'
-import './layout.scss'
 
-const LandingPageLayout = ({ children }) => (
-    <>
-    render={data => (
-      <>
-        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-        <Header/>
-        <article class="blogPost">
+const LandingPageLayout = () => (
+  <main>
 
-            {children}
-            <p>sdsdsdsd<a>TEST</a>sdsdsdsd</p>
-          </article>
-        <Footer/>
-      </>
-    )}
-    </>
+      <Emoji bigLogo={true}/>
+    <Link to="/" class="mainSiteLogo" >
+      arcane
+    </Link>
+
+            <p>"Demystifying the mystical art of JavaScript!"</p>
+
+      </main>
 )
 
-Layout.propTypes = {
+LandingPageLayout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 

@@ -14,7 +14,7 @@ module.exports = {
       options: {
         defaultLayouts: {
           default: path.resolve('./src/components/layout.js'),
-          docs: path.resolve('./src/components/layout.js')
+          docs: path.resolve('./src/components/landingPageLayout.js')
         },
       },
     },
