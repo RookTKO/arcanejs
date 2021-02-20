@@ -76,7 +76,6 @@ $triMessangerBlue: #4600FF;
 /* Fixed sidenav, full height */
 .sideBarNav {
   transform: skew(-2deg);
-  //border-right:2px solid black;
     height: 100%;
     width: 13.2rem;
     position: fixed;
@@ -85,7 +84,8 @@ $triMessangerBlue: #4600FF;
     background-color: $primaryColor;
     overflow-x: hidden;
     padding-top: 2.5rem;
-
+    left: -2rem;
+    padding-left: 3rem;
     a{
       padding: 6px 8px 6px 16px;
       text-decoration: none;
@@ -120,7 +120,7 @@ $triMessangerBlue: #4600FF;
       padding-bottom:0.5rem;
 
       &:hover{
-
+        //padding-left: -2rem;
         color: white;
         text-shadow:
             1px 1px 0 #000;

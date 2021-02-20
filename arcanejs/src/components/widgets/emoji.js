@@ -3,7 +3,7 @@ import './emoji.scss';
 
 const Emoji = ({bigLogo}) => (
 
-  <div className={bigLogo == true ? "center" : "topLeftNav"}>
+  <div className={bigLogo == true ? "centerLogo" : "topLeftNav"}>
     <span classNameName="crystalball"></span>
     <span className="emoji-hat-border">
       <span className="emoji-hat">
