@@ -12,7 +12,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        defaultLayouts: { default: path.resolve('./src/components/layout.js') },
+        defaultLayouts: {
+          default: path.resolve('./src/components/layout.js'),
+          docs: path.resolve('./src/components/layout.js')
+        },
       },
     },
     'gatsby-plugin-react-helmet',
@@ -29,6 +32,19 @@ module.exports = {
         name: `pages`,
         path: `${__dirname}/src/pages`
       }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `docs`,
+        path: `${__dirname}/src/docs`
+      }
+    },
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
+        path: `${__dirname}/src/docs`,
+      },
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
