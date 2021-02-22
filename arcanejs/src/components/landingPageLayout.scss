@@ -14,17 +14,37 @@ html {
   src: url("../fonts/blackwood-castle/Blackwood\ Castle.ttf");
 }
 
+.firstSection {
+  height: 50rem;
+  padding-top: 2rem;
+  background-color: #6bb756;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
+  clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
+  background-color: rgb(255, 197, 0);
+  background-image: linear-gradient(rgba(0, 0, 255, 0.57), #ffcf33ab),
+    url(data:image/svg+xml;base64,CiAgPHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnPgogICAgPHJlY3Qgd2lkdGg9JzEwMDAlJyBoZWlnaHQ9JzEwMDAlJyBmaWxsPScjZmZmJy8+CiAgICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPScjZmZjNTAwJy8+CiAgICA8c3ZnIHg9JzUwJScgeT0nMTAwJScgb3ZlcmZsb3c9J3Zpc2libGUnPgogICAgICA8cmVjdCB3aWR0aD0nMjAwMCUnIGhlaWdodD0nMjAwMCUnIGZpbGwtb3BhY2l0eT0nMC4xJyBmaWxsPScjOGQ2ZDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgyMCknLz4KICAgICAgPHJlY3Qgd2lkdGg9JzIwMDAlJyBoZWlnaHQ9JzIwMDAlJyBmaWxsLW9wYWNpdHk9JzAuMScgZmlsbD0nIzhkNmQwMCcgdHJhbnNmb3JtPSdyb3RhdGUoNDApJy8+CiAgICAgIDxyZWN0IHdpZHRoPScyMDAwJScgaGVpZ2h0PScyMDAwJScgZmlsbC1vcGFjaXR5PScwLjEnIGZpbGw9JyM4ZDZkMDAnIHRyYW5zZm9ybT0ncm90YXRlKDYwKScvPgogICAgICA8cmVjdCB3aWR0aD0nMjAwMCUnIGhlaWdodD0nMjAwMCUnIGZpbGwtb3BhY2l0eT0nMC4xJyBmaWxsPScjOGQ2ZDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSg4MCknLz4KICAgICAgPHJlY3Qgd2lkdGg9JzIwMDAlJyBoZWlnaHQ9JzIwMDAlJyBmaWxsLW9wYWNpdHk9JzAuMScgZmlsbD0nIzhkNmQwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMTAwKScvPgogICAgICA8cmVjdCB3aWR0aD0nMjAwMCUnIGhlaWdodD0nMjAwMCUnIGZpbGwtb3BhY2l0eT0nMC4xJyBmaWxsPScjOGQ2ZDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgxMjApJy8+CiAgICAgIDxyZWN0IHdpZHRoPScyMDAwJScgaGVpZ2h0PScyMDAwJScgZmlsbC1vcGFjaXR5PScwLjEnIGZpbGw9JyM4ZDZkMDAnIHRyYW5zZm9ybT0ncm90YXRlKDE0MCknLz4KICAgICAgPHJlY3Qgd2lkdGg9JzIwMDAlJyBoZWlnaHQ9JzIwMDAlJyBmaWxsLW9wYWNpdHk9JzAuMScgZmlsbD0nIzhkNmQwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMTYwKScvPgogICAgICA8cmVjdCB3aWR0aD0nMjAwMCUnIGhlaWdodD0nMjAwMCUnIGZpbGwtb3BhY2l0eT0nMC4xJyBmaWxsPScjOGQ2ZDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgxODApJy8+CiAgICAgIDxyZWN0IHdpZHRoPScyMDAwJScgaGVpZ2h0PScyMDAwJScgZmlsbC1vcGFjaXR5PScwLjEnIGZpbGw9JyM4ZDZkMDAnIHRyYW5zZm9ybT0ncm90YXRlKDIwMCknLz4KICAgICAgPHJlY3Qgd2lkdGg9JzIwMDAlJyBoZWlnaHQ9JzIwMDAlJyBmaWxsLW9wYWNpdHk9JzAuMScgZmlsbD0nIzhkNmQwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMjIwKScvPgogICAgICA8cmVjdCB3aWR0aD0nMjAwMCUnIGhlaWdodD0nMjAwMCUnIGZpbGwtb3BhY2l0eT0nMC4xJyBmaWxsPScjOGQ2ZDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgyNDApJy8+CiAgICAgIDxyZWN0IHdpZHRoPScyMDAwJScgaGVpZ2h0PScyMDAwJScgZmlsbC1vcGFjaXR5PScwLjEnIGZpbGw9JyM4ZDZkMDAnIHRyYW5zZm9ybT0ncm90YXRlKDI2MCknLz4KICAgICAgPHJlY3Qgd2lkdGg9JzIwMDAlJyBoZWlnaHQ9JzIwMDAlJyBmaWxsLW9wYWNpdHk9JzAuMScgZmlsbD0nIzhkNmQwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMjgwKScvPgogICAgICA8cmVjdCB3aWR0aD0nMjAwMCUnIGhlaWdodD0nMjAwMCUnIGZpbGwtb3BhY2l0eT0nMC4xJyBmaWxsPScjOGQ2ZDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgzMDApJy8+CiAgICAgIDxyZWN0IHdpZHRoPScyMDAwJScgaGVpZ2h0PScyMDAwJScgZmlsbC1vcGFjaXR5PScwLjEnIGZpbGw9JyM4ZDZkMDAnIHRyYW5zZm9ybT0ncm90YXRlKDMyMCknLz4KICAgICAgPHJlY3Qgd2lkdGg9JzIwMDAlJyBoZWlnaHQ9JzIwMDAlJyBmaWxsLW9wYWNpdHk9JzAuMScgZmlsbD0nIzhkNmQwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMzQwKScvPgogICAgICA8cmVjdCB3aWR0aD0nMjAwMCUnIGhlaWdodD0nMjAwMCUnIGZpbGwtb3BhY2l0eT0nMC4xJyBmaWxsPScjOGQ2ZDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgzNjApJy8+CgogICAgPC9zdmc+CiAgPC9zdmc+);
+}
+.secondSection {
 
-
+/*Free Snowball Dots SVG provided by SVGeez.com - CC 4.0 License - © 2019 Megan Young */
+background-color:#3a3a3a2f;
+background-size:576px 576px;
+background-repeat:repeat;
+background-image:url("data:image/svg+xml;charset=utf8,%3Csvg id='Layer_1' fill-opacity='0.8' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500' style='enable-background:new 0 0 500 500'%3E%3Cstyle%3E .st0{fill:rgb(255, 245, 95)} %3C/style%3E%3Ccircle class='st0' cx='87.5' cy='46.5' r='8.5'/%3E%3Ccircle class='st0' cx='94.5' cy='124.5' r='15.5'/%3E%3Ccircle class='st0' cx='244.5' cy='91.5' r='21.5'/%3E%3Ccircle class='st0' cx='348.5' cy='80.5' r='7.5'/%3E%3Ccircle class='st0' cx='155' cy='356' r='10'/%3E%3Ccircle class='st0' cx='422' cy='139' r='14'/%3E%3Ccircle class='st0' cx='123' cy='251' r='6'/%3E%3Ccircle class='st0' cx='280' cy='204' r='11'/%3E%3Ccircle class='st0' cx='315' cy='311' r='11'/%3E%3Ccircle class='st0' cx='262' cy='411' r='6'/%3E%3Ccircle class='st0' cx='455.5' cy='395.5' r='12.5'/%3E%3Ccircle class='st0' cx='432' cy='500' r='25'/%3E%3Ccircle class='st0' cx='432' r='25'/%3E%3Ccircle class='st0' cx='-3.5' cy='240.5' r='10.5'/%3E%3Ccircle class='st0' cx='496.5' cy='240.5' r='10.5'/%3E%3Ccircle class='st0' cx='96' cy='437' r='3'/%3E%3C/svg%3E");
+height: 800px;
+margin-top:-18rem;
+padding-top:20rem;
+}
 .quoteOfTheDay {
   display: inline-block;
   position: relative;
-  padding:  10px 20px;
+  padding: 10px 20px;
   color: #fff;
   box-sizing: border-box;
   max-width: 300px;
   min-width: 80px;
   min-height: 38px;
+  top: 10%;
 }
 .quoteOfTheDay:before {
   content: "";
@@ -37,7 +57,16 @@ html {
   border: 1px solid #e5a002;
   border-radius: 1rem;
   box-sizing: border-box;
-  clip-path: polygon(0% 105%, 0% 0%, 105% 0%, 105% 105%, 43px 105%, 43px 80%, 21px 80%, 21px 105%);
+  clip-path: polygon(
+    0% 105%,
+    0% 0%,
+    105% 0%,
+    105% 105%,
+    43px 105%,
+    43px 80%,
+    21px 80%,
+    21px 105%
+  );
 }
 .quoteOfTheDay:after {
   content: "";
@@ -49,7 +78,14 @@ html {
   top: calc(100% - 1px);
   left: 20px;
   box-sizing: border-box;
-  clip-path: polygon(0 0, 0% 100%, 100% 0%, calc(100% - 2px) 0, 1px calc(100% - 2px), 1px 0);
+  clip-path: polygon(
+    0 0,
+    0% 100%,
+    100% 0%,
+    calc(100% - 2px) 0,
+    1px calc(100% - 2px),
+    1px 0
+  );
 }
 .landingPageQuote {
   font-family: GothicCastle;
@@ -149,13 +185,68 @@ html {
   content: "JS";
 }
 @media only screen and (max-width: 768px) {
+  .firstSection {
+    height: 30rem;
+  }
   .landingPageQuote {
-    //width: 90%;
+    font-size: 1rem;
+    border: 2px red solid;
+    width: 100%;
+    &:before {
+      border-top: 12px solid #8736aa;
+      content: "";
+      margin: 0 auto; /* this centers the line to the full width specified */
+      position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+      top: 55%;
+      left: 10%;
+      right: 0;
+      bottom: 0%;
+
+      transform: skew(55deg, 8deg);
+    }
+    &:after {
+      border-top: 12px solid #8736aa;
+      content: "";
+      margin: 0 auto; /* this centers the line to the full width specified */
+      position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+      top: 55%;
+      left: 10%;
+      right: 0;
+      bottom: 0%;
+
+      transform: skew(-55deg, -8deg);
+    }
   }
   .mainSiteLogo {
-   // width: 90%;
+    font-size: 1rem;
   }
-  .centerLogo{
-    transform: scale(2);
+  .mainSiteLogo::before {
+    position: absolute;
+    top: -0.5rem;
+    padding-top: 0.5rem;
+    padding-left: 0.6rem;
+    z-index: -1;
+    height: 300%;
+    font-size: 1rem !important;
+    font-family: GothicSchool;
+    color: #00b8ff;
+    opacity: 0.6;
+    background-image: linear-gradient(
+      -180deg,
+      #00b8ff,
+      rgba(31, 104, 254, 255),
+      rgba(65, 79, 254, 255),
+      rgba(76, 73, 252, 255),
+      rgba(86, 63, 255, 255),
+      rgba(108, 55, 255, 255),
+      #8736aa
+    );
+    text-shadow: none;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    content: "JS";
+  }
+  .centerLogo {
+    transform: scale(1);
   }
 }
