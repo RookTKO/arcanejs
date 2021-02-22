@@ -13,8 +13,7 @@ const LandingPageLayout = () => (
     <Link to="/" class="mainSiteLogo" >
       arcane
     </Link>
-    <Link to="/" class="entry">[ Enter at your own peril ]</Link>
-
+    <span class="quoteOfTheDay">So nice</span>
 
       </main>
 )

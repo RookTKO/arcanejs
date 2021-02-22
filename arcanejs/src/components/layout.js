@@ -18,7 +18,7 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <main>
+      <main >
         {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         <Header/>
         <article class="blogPost">
