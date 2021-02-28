@@ -64,7 +64,7 @@ function NestedSideBarItem({ item }) {
   const showSubnav = () => setSubnav(!subnav)
   return (
     <>
-      <Link className="sideBarLabelNested" to="/page-2" onClick={item.subNav && showSubnav}>
+      <Link className="sideBarLabelNested" to={item.path} onClick={item.subNav && showSubnav}>
         <div>
           {item.icon}
           <span className="sideBarLink">{item.title}</span>
@@ -93,12 +93,42 @@ const SideBarData = [
     iconOpen: <RiArrowUpSFill />,
     subNav: [
       {
-        title:'Variables22',
+        title:'Overview',
+        path: '/Data Types Overview',
+        icon: '🥚',
+      },
+      {
+        title:'undefined',
         path: '/',
         icon: '🥚',
       },
       {
-        title:'Variables22',
+        title:'Boolean',
+        path: '/',
+        icon: '🥚',
+      },
+      {
+        title:'String',
+        path: '/',
+        icon: '🥚',
+      },
+      {
+        title:'Symbol',
+        path: '/',
+        icon: '🥚',
+      },
+      {
+        title:'Number',
+        path: '/',
+        icon: '🥚',
+      },
+      {
+        title:'BigInt',
+        path: '/',
+        icon: '🥚',
+      },
+      {
+        title:'null',
         path: '/',
         icon: '🥚',
       }
@@ -112,27 +142,37 @@ const SideBarData = [
     iconOpen: <RiArrowUpSFill />,
     subNav: [
       {
-        title:'Variable Overview',
+        title:'Overview',
         path: '/',
         icon: '🥚',
       },
       {
-        title:'var Variable',
+        title:'closure',
         path: '/',
         icon: '🥚',
       },
       {
-        title:'let & const',
+        title:'hoisting',
         path: '/',
         icon: '🥚',
       },
       {
-        title:'static Keyword',
+        title:'var',
         path: '/',
         icon: '🥚',
       },
       {
-        title:'Variable Review',
+        title:'let',
+        path: '/',
+        icon: '🥚',
+      },
+      {
+        title:'const',
+        path: '/',
+        icon: '🥚',
+      },
+      {
+        title:'static',
         path: '/',
         icon: '🥚',
       }
@@ -143,21 +183,68 @@ const SideBarData = [
     path: '/',
     icon: '🥚',
     iconClose: <RiArrowDownSFill />,
-    iconOpen: <RiArrowUpSFill />
-  },
-  {
-    title:'Objects',
-    path: '/',
-    icon: '🥚',
-    iconClose: <RiArrowDownSFill />,
-    iconOpen: <RiArrowUpSFill />
+    iconOpen: <RiArrowUpSFill />,
+    subNav: [
+      {
+        title:'Overview',
+        path: '/',
+        icon: '🥚',
+      },
+      {
+        title:'function declaration',
+        path: '/',
+        icon: '🥚',
+      },
+      {
+        title:'function expression',
+        path: '/',
+        icon: '🥚',
+      },
+      {
+        title:'anonymous function',
+        path: '/',
+        icon: '🥚',
+      },
+      {
+        title:'iffe',
+        path: '/',
+        icon: '🥚',
+      },
+      {
+        title:'factory function',
+        path: '/',
+        icon: '🥚',
+      }
+    ]
   },
   {
     title:'Classes',
     path: '/',
     icon: '🥚',
     iconClose: <RiArrowDownSFill />,
-    iconOpen: <RiArrowUpSFill />
+    iconOpen: <RiArrowUpSFill />,
+    subNav: [
+      {
+        title:'Overview',
+        path: '/',
+        icon: '🥚',
+      },
+      {
+        title:'Constructor',
+        path: '/',
+        icon: '🥚',
+      },
+      {
+        title:'Super',
+        path: '/',
+        icon: '🥚',
+      },
+      {
+        title:'Extend',
+        path: '/',
+        icon: '🥚',
+      }
+    ]
   }
 
 ]

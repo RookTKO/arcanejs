@@ -13,8 +13,8 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         defaultLayouts: {
-          default: path.resolve('./src/components/layout.js'),
-          docs: path.resolve('./src/components/landingPageLayout.js')
+          pages: path.resolve('./src/components/landingPageLayout.js'),
+          default: path.resolve('./src/components/layout.js')
         },
       },
     },
