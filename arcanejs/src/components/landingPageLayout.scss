@@ -25,12 +25,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 background-attachment: fixed;
 background-size: cover;
 /* background by SVGBackgrounds.com */
-clip-path: polygon(-10% 0, 75% -20%, 100% 55%, 100% 100%, -10% 100%);
+clip-path: polygon(-10% 0, 95% 0%, 100% 15%, 100% 100%, -10% 100%);
+box-shadow: 10px 5px 5px #000;
 }
 
-li{
-  padding:0.2rem;
-}
+
 .firstSection {
   height: 72rem;
   padding-top: 2rem;
@@ -39,11 +38,19 @@ li{
   background-color: #ffc500;
   background-image: linear-gradient(rgba(0, 0, 255, 0.57), #ffcf33ab),
     url(data:image/svg+xml;base64,CiAgPHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnPgogICAgPHJlY3Qgd2lkdGg9JzEwMDAlJyBoZWlnaHQ9JzEwMDAlJyBmaWxsPScjZmZmJy8+CiAgICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPScjZmZjNTAwJy8+CiAgICA8c3ZnIHg9JzUwJScgeT0nMTAwJScgb3ZlcmZsb3c9J3Zpc2libGUnPgogICAgICA8cmVjdCB3aWR0aD0nMjAwMCUnIGhlaWdodD0nMjAwMCUnIGZpbGwtb3BhY2l0eT0nMC4xJyBmaWxsPScjOGQ2ZDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgyMCknLz4KICAgICAgPHJlY3Qgd2lkdGg9JzIwMDAlJyBoZWlnaHQ9JzIwMDAlJyBmaWxsLW9wYWNpdHk9JzAuMScgZmlsbD0nIzhkNmQwMCcgdHJhbnNmb3JtPSdyb3RhdGUoNDApJy8+CiAgICAgIDxyZWN0IHdpZHRoPScyMDAwJScgaGVpZ2h0PScyMDAwJScgZmlsbC1vcGFjaXR5PScwLjEnIGZpbGw9JyM4ZDZkMDAnIHRyYW5zZm9ybT0ncm90YXRlKDYwKScvPgogICAgICA8cmVjdCB3aWR0aD0nMjAwMCUnIGhlaWdodD0nMjAwMCUnIGZpbGwtb3BhY2l0eT0nMC4xJyBmaWxsPScjOGQ2ZDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSg4MCknLz4KICAgICAgPHJlY3Qgd2lkdGg9JzIwMDAlJyBoZWlnaHQ9JzIwMDAlJyBmaWxsLW9wYWNpdHk9JzAuMScgZmlsbD0nIzhkNmQwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMTAwKScvPgogICAgICA8cmVjdCB3aWR0aD0nMjAwMCUnIGhlaWdodD0nMjAwMCUnIGZpbGwtb3BhY2l0eT0nMC4xJyBmaWxsPScjOGQ2ZDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgxMjApJy8+CiAgICAgIDxyZWN0IHdpZHRoPScyMDAwJScgaGVpZ2h0PScyMDAwJScgZmlsbC1vcGFjaXR5PScwLjEnIGZpbGw9JyM4ZDZkMDAnIHRyYW5zZm9ybT0ncm90YXRlKDE0MCknLz4KICAgICAgPHJlY3Qgd2lkdGg9JzIwMDAlJyBoZWlnaHQ9JzIwMDAlJyBmaWxsLW9wYWNpdHk9JzAuMScgZmlsbD0nIzhkNmQwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMTYwKScvPgogICAgICA8cmVjdCB3aWR0aD0nMjAwMCUnIGhlaWdodD0nMjAwMCUnIGZpbGwtb3BhY2l0eT0nMC4xJyBmaWxsPScjOGQ2ZDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgxODApJy8+CiAgICAgIDxyZWN0IHdpZHRoPScyMDAwJScgaGVpZ2h0PScyMDAwJScgZmlsbC1vcGFjaXR5PScwLjEnIGZpbGw9JyM4ZDZkMDAnIHRyYW5zZm9ybT0ncm90YXRlKDIwMCknLz4KICAgICAgPHJlY3Qgd2lkdGg9JzIwMDAlJyBoZWlnaHQ9JzIwMDAlJyBmaWxsLW9wYWNpdHk9JzAuMScgZmlsbD0nIzhkNmQwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMjIwKScvPgogICAgICA8cmVjdCB3aWR0aD0nMjAwMCUnIGhlaWdodD0nMjAwMCUnIGZpbGwtb3BhY2l0eT0nMC4xJyBmaWxsPScjOGQ2ZDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgyNDApJy8+CiAgICAgIDxyZWN0IHdpZHRoPScyMDAwJScgaGVpZ2h0PScyMDAwJScgZmlsbC1vcGFjaXR5PScwLjEnIGZpbGw9JyM4ZDZkMDAnIHRyYW5zZm9ybT0ncm90YXRlKDI2MCknLz4KICAgICAgPHJlY3Qgd2lkdGg9JzIwMDAlJyBoZWlnaHQ9JzIwMDAlJyBmaWxsLW9wYWNpdHk9JzAuMScgZmlsbD0nIzhkNmQwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMjgwKScvPgogICAgICA8cmVjdCB3aWR0aD0nMjAwMCUnIGhlaWdodD0nMjAwMCUnIGZpbGwtb3BhY2l0eT0nMC4xJyBmaWxsPScjOGQ2ZDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgzMDApJy8+CiAgICAgIDxyZWN0IHdpZHRoPScyMDAwJScgaGVpZ2h0PScyMDAwJScgZmlsbC1vcGFjaXR5PScwLjEnIGZpbGw9JyM4ZDZkMDAnIHRyYW5zZm9ybT0ncm90YXRlKDMyMCknLz4KICAgICAgPHJlY3Qgd2lkdGg9JzIwMDAlJyBoZWlnaHQ9JzIwMDAlJyBmaWxsLW9wYWNpdHk9JzAuMScgZmlsbD0nIzhkNmQwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMzQwKScvPgogICAgICA8cmVjdCB3aWR0aD0nMjAwMCUnIGhlaWdodD0nMjAwMCUnIGZpbGwtb3BhY2l0eT0nMC4xJyBmaWxsPScjOGQ2ZDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgzNjApJy8+CgogICAgPC9zdmc+CiAgPC9zdmc+);
+    background-attachment: fixed;
+    background-size: cover;
+    span{
+      -webkit-text-stroke-width: 0.02rem;
+      -webkit-text-stroke-color: black;
+      padding:0.2rem;
+    }
   }
 .secondSection {
   /*Free Snowball Dots SVG provided by SVGeez.com - CC 4.0 License - © 2019 Megan Young */
   background-color:#8736AA;
   background: linear-gradient(45deg, rgba(0, 0, 61, 0.57), #ffcf33ab), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cGF0aCBkPSJNLTIgMTBMMTAgLTJaTTEwIDZMNiAxMFpNLTIgMkwyIC0yIiBzdHJva2U9IiMyMjIiIHN0cm9rZS13aWR0aD0iNC41Ij48L3BhdGg+Cjwvc3ZnPg=="),url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPgo8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgyPSIxIiB5Mj0iMSI+CjxzdG9wIHN0b3AtY29sb3I9IiNGMTkiPjwvc3RvcD4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMENGIj48L3N0b3A+CjwvbGluZWFyR3JhZGllbnQ+CjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZykiPjwvcmVjdD4KPC9zdmc+");
+
   height: 1000px;
   margin-top:-18rem;
   padding-top:20rem;
@@ -86,7 +93,7 @@ height: 1000px;
   max-width: 800px;
   min-width: 80px;
   min-height: 38px;
-  top: 50%;
+  top: 35%;
   left: 45%;
   font-family: GothicCastle;
   font-size:2rem;
@@ -111,6 +118,12 @@ height: 1000px;
     content: '🧠';
     margin-left: -20px;
     margin-right: 10px;
+  }
+  ul{
+    padding:1rem 0rem;
+  }
+  li{
+    padding:0.4rem 0rem;
   }
 }
 
@@ -167,7 +180,7 @@ height: 1000px;
   top: 40%;
   left: 58%;
   transform: rotate(-11deg) scale(8.4);
-  z-index: -1;
+  //z-index: -1;
   // animation: sine ease-in-out 5s infinite alternate;
 }
 // @keyframes sine {
@@ -210,6 +223,10 @@ height: 1000px;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   content: "JS";
+}
+
+.centerLogo{
+  z-index:-10;
 }
 @media only screen and (max-width: 768px) {
   .firstSection {

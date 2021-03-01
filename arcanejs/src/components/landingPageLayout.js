@@ -20,10 +20,10 @@ const LandingPageLayout = () => (
         <br />
         <br />
         <ul>
-          <li class="confusedEmoji">Is everything an Object?</li>
-          <li class="fireEmoji">Undeclared vs Undefined vs Null</li>
-          <li class="questionEmoji">What different functions do?</li>
-          <li class="brainEmoji">Scope vs Closure</li>
+          <li class="confusedEmoji"><span>Is everything an Object?</span></li>
+          <li class="fireEmoji"><span>Undeclared vs Undefined vs Null</span></li>
+          <li class="questionEmoji"><span>What different functions do?</span></li>
+          <li class="brainEmoji"><span>Scope vs Closure</span></li>
         </ul>
       </p>
     </section>
