@@ -182,23 +182,9 @@ height: 1000px;
   top: 40%;
   left: 58%;
   transform: rotate(-11deg) scale(8.4);
-  //z-index: -1;
-  // animation: sine ease-in-out 5s infinite alternate;
+  z-index: -1 !important;
 }
-// @keyframes sine {
-//   /* You could think of as "step 1" */
-//   0% {
-//     transform: rotateZ(-20deg)
-//     scale(7.4)
-//     translateY(-3rem);
-//   }
-//   /* You could think of as "step 2" */
-//   100% {
-//     transform: rotateZ(20deg)
-//     scale(7.4)
-//     translateY(2rem);
-//   }
-// }
+
 
 .mainSiteLogo::before {
   -webkit-font-smoothing: subpixel-antialiased;
