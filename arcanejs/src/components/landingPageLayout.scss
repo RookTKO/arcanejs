@@ -378,8 +378,8 @@ height: 1000px;
   .centerLogo {
     transform: scale(1.8) rotate(-5deg) !important;
     opacity:0.1;
-    top: 10%;
-    left:-5%;
+    top: 10% !important;
+    left:-5% !important;
   }
   .secondSection{
     p{
