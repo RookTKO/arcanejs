@@ -21,10 +21,10 @@ $secondEmojiColor: #c300ffd0;
   .centerLogo{
     position: absolute;
     top: 50%;
-    left: 20%;
+    left: 15%;
     transform: rotate(-11deg)
                 scale(3.4);
-    z-index:10;
+    z-index: -2 !important;
   }
 
   .emoji-hat-border{
