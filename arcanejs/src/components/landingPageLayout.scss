@@ -356,41 +356,24 @@ height: 1000px;
     }
   }
   .mainSiteLogo {
-    font-size: 0.8rem;
+    font-size: 4rem;
     z-index: 10;
-    left:40%;
+    left:clamp(5%,18vw,10%);
     top:25%;
     backface-visibility: hidden;
     -webkit-font-smoothing: subpixel-antialiased;
-    transform: rotate(0deg) scale(8) !important;
+    transform: none !important;
   }
-  .mainSiteLogo::before {
-    position: absolute;
-    top: -0.5rem;
-    padding-top: 0.5rem;
-    padding-left: 0.4rem;
-    z-index: -1;
-    height: 170%;
-    font-size: 1rem !important;
+  .mainSiteLogo::after {
+    font-size: 5rem !important;
     font-family: GothicSchool;
     color: #00b8ff;
-    opacity: 0.6;
-    background-image: linear-gradient(
-      -180deg,
-      #00b8ff,
-      rgba(31, 104, 254, 255),
-      rgba(65, 79, 254, 255),
-      rgba(76, 73, 252, 255),
-      rgba(86, 63, 255, 255),
-      rgba(108, 55, 255, 255),
-      #8736aa
-    );
-    text-shadow: none;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     content: "JS";
     backface-visibility: hidden;
     -webkit-font-smoothing: subpixel-antialiased;
+  }
+  .mainSiteLogo::before{
+  visibility: hidden;
   }
   .centerLogo {
     transform: scale(1.8) rotate(-5deg) !important;
