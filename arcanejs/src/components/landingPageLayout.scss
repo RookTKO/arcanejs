@@ -361,10 +361,10 @@ height: 1000px;
     z-index: 10;
     left:40%;
     top:25%;
+    backface-visibility: hidden;
     -webkit-font-smoothing: subpixel-antialiased;
   }
   .mainSiteLogo::before {
-    -webkit-font-smoothing: subpixel-antialiased;
     position: absolute;
     top: -0.5rem;
     padding-top: 0.5rem;
@@ -389,6 +389,8 @@ height: 1000px;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     content: "JS";
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
   }
   .centerLogo {
     transform: scale(1.8) rotate(-5deg) !important;
@@ -406,7 +408,7 @@ height: 1000px;
     z-index: 10;
     top: 20%;
     left:0%;
-    margin-top:3rem;
+    margin-top:5rem;
     padding: 0.3rem 1rem;
   }
 }
