@@ -15,9 +15,9 @@ html {
 }
 
 ul{
-  list-style-type: none; /* Remove bullets */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margins */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   border: 3px #8736AA ;
   border-style: dashed solid dashed solid;
   background-color: #ffaa00;
@@ -25,12 +25,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 background-attachment: fixed;
 background-size: cover;
 /* background by SVGBackgrounds.com */
-clip-path: polygon(-10% 0, 95% 0%, 100% 15%, 100% 100%, -10% 100%);
+clip-path: polygon(95% 0, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0% 100%, -30% 0%, 5% 0);
 box-shadow: 10px 5px 5px #000;
 }
 
 
 .firstSection {
+  width:100%;
+  overflow: hidden;
   height: 72rem;
   padding-top: 2rem;
   -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
@@ -40,7 +42,7 @@ box-shadow: 10px 5px 5px #000;
     url(data:image/svg+xml;base64,CiAgPHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnPgogICAgPHJlY3Qgd2lkdGg9JzEwMDAlJyBoZWlnaHQ9JzEwMDAlJyBmaWxsPScjZmZmJy8+CiAgICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPScjZmZjNTAwJy8+CiAgICA8c3ZnIHg9JzUwJScgeT0nMTAwJScgb3ZlcmZsb3c9J3Zpc2libGUnPgogICAgICA8cmVjdCB3aWR0aD0nMjAwMCUnIGhlaWdodD0nMjAwMCUnIGZpbGwtb3BhY2l0eT0nMC4xJyBmaWxsPScjOGQ2ZDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgyMCknLz4KICAgICAgPHJlY3Qgd2lkdGg9JzIwMDAlJyBoZWlnaHQ9JzIwMDAlJyBmaWxsLW9wYWNpdHk9JzAuMScgZmlsbD0nIzhkNmQwMCcgdHJhbnNmb3JtPSdyb3RhdGUoNDApJy8+CiAgICAgIDxyZWN0IHdpZHRoPScyMDAwJScgaGVpZ2h0PScyMDAwJScgZmlsbC1vcGFjaXR5PScwLjEnIGZpbGw9JyM4ZDZkMDAnIHRyYW5zZm9ybT0ncm90YXRlKDYwKScvPgogICAgICA8cmVjdCB3aWR0aD0nMjAwMCUnIGhlaWdodD0nMjAwMCUnIGZpbGwtb3BhY2l0eT0nMC4xJyBmaWxsPScjOGQ2ZDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSg4MCknLz4KICAgICAgPHJlY3Qgd2lkdGg9JzIwMDAlJyBoZWlnaHQ9JzIwMDAlJyBmaWxsLW9wYWNpdHk9JzAuMScgZmlsbD0nIzhkNmQwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMTAwKScvPgogICAgICA8cmVjdCB3aWR0aD0nMjAwMCUnIGhlaWdodD0nMjAwMCUnIGZpbGwtb3BhY2l0eT0nMC4xJyBmaWxsPScjOGQ2ZDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgxMjApJy8+CiAgICAgIDxyZWN0IHdpZHRoPScyMDAwJScgaGVpZ2h0PScyMDAwJScgZmlsbC1vcGFjaXR5PScwLjEnIGZpbGw9JyM4ZDZkMDAnIHRyYW5zZm9ybT0ncm90YXRlKDE0MCknLz4KICAgICAgPHJlY3Qgd2lkdGg9JzIwMDAlJyBoZWlnaHQ9JzIwMDAlJyBmaWxsLW9wYWNpdHk9JzAuMScgZmlsbD0nIzhkNmQwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMTYwKScvPgogICAgICA8cmVjdCB3aWR0aD0nMjAwMCUnIGhlaWdodD0nMjAwMCUnIGZpbGwtb3BhY2l0eT0nMC4xJyBmaWxsPScjOGQ2ZDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgxODApJy8+CiAgICAgIDxyZWN0IHdpZHRoPScyMDAwJScgaGVpZ2h0PScyMDAwJScgZmlsbC1vcGFjaXR5PScwLjEnIGZpbGw9JyM4ZDZkMDAnIHRyYW5zZm9ybT0ncm90YXRlKDIwMCknLz4KICAgICAgPHJlY3Qgd2lkdGg9JzIwMDAlJyBoZWlnaHQ9JzIwMDAlJyBmaWxsLW9wYWNpdHk9JzAuMScgZmlsbD0nIzhkNmQwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMjIwKScvPgogICAgICA8cmVjdCB3aWR0aD0nMjAwMCUnIGhlaWdodD0nMjAwMCUnIGZpbGwtb3BhY2l0eT0nMC4xJyBmaWxsPScjOGQ2ZDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgyNDApJy8+CiAgICAgIDxyZWN0IHdpZHRoPScyMDAwJScgaGVpZ2h0PScyMDAwJScgZmlsbC1vcGFjaXR5PScwLjEnIGZpbGw9JyM4ZDZkMDAnIHRyYW5zZm9ybT0ncm90YXRlKDI2MCknLz4KICAgICAgPHJlY3Qgd2lkdGg9JzIwMDAlJyBoZWlnaHQ9JzIwMDAlJyBmaWxsLW9wYWNpdHk9JzAuMScgZmlsbD0nIzhkNmQwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMjgwKScvPgogICAgICA8cmVjdCB3aWR0aD0nMjAwMCUnIGhlaWdodD0nMjAwMCUnIGZpbGwtb3BhY2l0eT0nMC4xJyBmaWxsPScjOGQ2ZDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgzMDApJy8+CiAgICAgIDxyZWN0IHdpZHRoPScyMDAwJScgaGVpZ2h0PScyMDAwJScgZmlsbC1vcGFjaXR5PScwLjEnIGZpbGw9JyM4ZDZkMDAnIHRyYW5zZm9ybT0ncm90YXRlKDMyMCknLz4KICAgICAgPHJlY3Qgd2lkdGg9JzIwMDAlJyBoZWlnaHQ9JzIwMDAlJyBmaWxsLW9wYWNpdHk9JzAuMScgZmlsbD0nIzhkNmQwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMzQwKScvPgogICAgICA8cmVjdCB3aWR0aD0nMjAwMCUnIGhlaWdodD0nMjAwMCUnIGZpbGwtb3BhY2l0eT0nMC4xJyBmaWxsPScjOGQ2ZDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgzNjApJy8+CgogICAgPC9zdmc+CiAgPC9zdmc+);
     background-attachment: fixed;
     background-size: cover;
-    span{
+    .firstSection > span{
       -webkit-text-stroke-width: 0.02rem;
       -webkit-text-stroke-color: black;
       padding:0.2rem;
@@ -273,9 +275,9 @@ height: 1000px;
     position: absolute;
     top: -0.5rem;
     padding-top: 0.5rem;
-    padding-left: 0.6rem;
+    padding-left: 0.4rem;
     z-index: -1;
-    height: 300%;
+    height: 170%;
     font-size: 3rem !important;
     font-family: GothicSchool;
     color: #00b8ff;
@@ -360,9 +362,9 @@ height: 1000px;
     position: absolute;
     top: -0.5rem;
     padding-top: 0.5rem;
-    padding-left: 0.6rem;
+    padding-left: 0.4rem;
     z-index: -1;
-    height: 300%;
+    height: 170%;
     font-size: 1rem !important;
     font-family: GothicSchool;
     color: #00b8ff;

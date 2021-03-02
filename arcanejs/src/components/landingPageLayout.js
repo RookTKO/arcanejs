@@ -47,10 +47,7 @@ const LandingPageLayout = () => (
       nisi. div 1
       </p>
     </div>
-    <div class="thirdSection">
-      Test div 1<p>etweewe </p>
-    </div>
-    <div class="fourthSection"><p>etweewe </p></div>
+
   </main>
 );
 
