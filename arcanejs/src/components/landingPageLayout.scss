@@ -362,6 +362,7 @@ height: 1000px;
     top:25%;
     backface-visibility: hidden;
     -webkit-font-smoothing: subpixel-antialiased;
+    transform: rotate(0deg) scale(8) !important;
   }
   .mainSiteLogo::before {
     position: absolute;
