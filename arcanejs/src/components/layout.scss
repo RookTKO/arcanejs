@@ -67,6 +67,7 @@ code {
       filter: url("glob.svg#goo");
       text-shadow: 1px 1px 0 black, 2px 2px 0 black;
       animation: typing 0.6s steps(180, end);
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
     @keyframes typing {
       from {
